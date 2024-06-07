@@ -1,85 +1,67 @@
-# 🎮 shezzor's JavaScript Game Development Template
+# Bomberman Clone Build - Multiplayer - JavaScript
 
-A small template to jump start your web/browser based game development using the
-HTML canvas element.
+This is a simple Bomberman clone application, it is multiplayer (5 players), all players use the same keyboard.
 
-## ✔️ What this is
+Player 1: Top left - White
 
-A code template designed to be used as a starting point your javascript game
-development which handles the initial boilerplate code. It also includes a number
-of useful utility functions to help you along the way.
+- up: up arrow key
+- down: down arrow key
+- left: left arrow key
+- right: right arrow key
+- bomb: space
 
-It includes...
+Player 2: Top right - Red
 
-- A standard folder scaffolding and code structure.
-- A canvas element and its context. This is already configured and set up for you.
-- The main game loop with a general usage time object.
-- Basic keyboard and gamepad control handlers.
-- A small set of handy utility functions to help with some of the game basics.
-- A set of TypeScript types for a number of the objects i've preconfigured.
-- A quick example on how to use the code.
+- up: 8 numpad
+- down: 5 numpad
+- left: 4 numpad
+- right: 6 numpad
+- bomb: 0 numpad
 
-## ❌ What this isn't
+Player 3: Bottom left - Blue
 
-A framework. You'll still need to understand how the canvas element and web works.
-Which honestly can only be a good thing. You'll be learning the browser and its
-features rather than someone elses interpretation of it.
+- up: P key
+- down: :; key
+- left: L key
+- right: "' key
+- bomb: O key
 
-## 🎫 Whats required
+Player 4: Bottom right - Black
 
-- A recent browser (preferably within the last 6 months).
-  - _NOTE: This repo uses native ES modules and import maps._
-- Some understanding of the latest JavaScript and/or TypeScript development
-  practices.
+- up: W key
+- down: S key
+- left: A key
+- right: D key
+- bomb: Q key
 
-## ⭐ Getting started
+Player 5: Middle - Green
 
-Simply clone the repo and open the resulting code in your favourite editor.
+- up: Y key
+- down: H key
+- left: G key
+- right: J key
+- bomb: T key
 
-By default, this repo uses native ES modules so you'll need to host the files on a
-development server. Or preferably, you can use one of the very handy "Live Server"
-extensions available for various editors which handles this for you.
+## How To Play:
 
-Alternatively, if you prefer to have full control, you can bake in your own build
-pipeline. As there's many toolchain/build tools available, this is out of scope for
-this repo.
+Each bomberman starts off with 1 bomb
 
-This repo also includes npm dependencies and a set of types to help with TypeScript
-development but this is not required or configured by default. Although, I'll be
-looking how I can automatically configure either JS/TS style environments in the
-future.
+- There is a timer to count down the game
+- When blocks are broken, there is a chance of a power-up spawning
+- Collect power-ups to have an advantage
+- Blow up other bomberman players
+- The last bomberman player standing increases their score by 1
 
-## 👨‍💻 Example code
+## Power-ups
 
-Included is a small example of how to move an image around the screen using the code
-supplied.
+- Bomb: Increases the bomb count of the bomberman by 1
+- Boots: Increases the speed of the bomberman
+- Fire: Increases the range of the bomb set down by the bomberman
 
-`index.js` = Is the main entry point for the example. This calls the `start` function
-on our main loop class...
+## Getting started
 
-`TemplateDemo.js` = Is the main loop class. This sets up the canvas and initial scene
-using the base `Game` class. Speaking of which...
+Clone the repo and install the necessary files
 
-`TestScene.js` = Is the main scene for the included example. This houses all the logic
-and drawing routines for each "frame" of the game.
+npm install
 
-`Logo.js` = An example of an "entity" using the `Entity` class.
-
-Note: The code uses importmaps and has the `engine` and `game` folders already aliased
-for easier imports paths.
-
-## 📃 Included example credits
-
-- Code - Anthony Sherratt
-- Graphics - Originally Robin Levy but remastered by Anthony Sherratt
-- Music - Space_Cat [https://pixabay.com/users/space_cat-7706897/]
-
-## 🔖 Next steps
-
-To keep improving what is included here (including this documention!).
-
-If you wish to see what can be done with this template, why not join me on my YouTube
-channel? As I'll be using this as a starting point for all of my projects moving
-forward.
-
-https://www.youtube.com/@shezzor
+Visual Studios: Click 'Go Live' to play

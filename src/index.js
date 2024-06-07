@@ -1,5 +1,5 @@
-import { TemplateExample } from 'game/TemplateExample.js';
+import { Balloono } from "game/Balloono.js";
 
-window.addEventListener('load', () => {
-	new TemplateExample().start();
+window.addEventListener("load", () => {
+	new Balloono().start();
 });
